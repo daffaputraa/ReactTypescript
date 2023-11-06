@@ -1,14 +1,18 @@
 import Button from "./assets/components/Button";
 
 function App() {
-  const onClick = () => {
-    return 5;
+  const onClick = (): any => {
+    return 1 + "string";
   };
 
   return (
     <>
       <p>Test</p>
-      <Button style={{ display: "flex", marginTop: "20px", color: "wanr" }} />
+      <Button
+        onClick={onClick}
+        style={{ margin: "2px" }}
+        // style={{ display: "flex", marginTop: "20px", color: "wanr" }}
+      />
     </>
   );
 }
